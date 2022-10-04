@@ -30,3 +30,11 @@ for(var i = 0; i < pacientes.length ; i++){
         tdImc.textContent = imc;
     }    
 }
+    // Restante do código
+
+    if(pesoEhValido && alturaEhValida){
+        var imc = peso / ( altura * altura);    
+        //ALTERAÇÃO AQUI...
+        tdImc.textContent = imc.toFixed(2);
+    }
+}       
